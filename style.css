@@ -1,0 +1,86 @@
+:root {
+    --bg: #0b0b14;
+    --panel: #151526;
+    --primary: #7c7cff;
+    --accent: #00ffd5;
+    --text: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background: var(--panel);
+}
+
+.logo {
+    color: var(--accent);
+    font-weight: bold;
+}
+
+nav a {
+    color: var(--text);
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.btn-nav {
+    background: var(--primary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero span {
+    color: var(--accent);
+}
+
+.btn-main {
+    padding: 1rem 2rem;
+    background: var(--primary);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.features, .plan-section, .register {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: var(--panel);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.plan-card {
+    background: var(--panel);
+    display: inline-block;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--panel);
+}
